@@ -23,7 +23,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    Map<String,Object> producerConfig(){
+    Map<String,Object> producerConfig(){        //if we didn't write in properties file.
         Map<String,Object> props = new HashMap<>();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 "localhost:9092");
